@@ -7,7 +7,7 @@ class MyCounterV1:
 
 
 counter1 = MyCounterV1(value=0)
-print(counter1.value)  # 0
+print(counter1.value)
 
 counter1.count_up()
 print(counter1.value)  # 1
