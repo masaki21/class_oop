@@ -1,15 +1,18 @@
+import math
+
+
 class Square:
     def __init__(self, side):
         self.side = side
 
     def area(self):
-        value = self.side * self.side
+        value = self.side**2
         if value == int(value):
             return int(value)
         return "{:.2f}".format(value)
 
     def diagonal(self):
-        value = (self.side * self.side + self.side * self.side) ** 0.5
+        value = math.sqrt((self.side**2) + (self.side**2))
         return "{:.2f}".format(value)
 
 

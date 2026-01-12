@@ -3,17 +3,17 @@ class MyCounterV1:
         self.value = value
 
     def count_up(self):
-        self.value = self.value + 1
+        self.value += 1
 
 
 counter1 = MyCounterV1(value=0)
 print(counter1.value)
 
 counter1.count_up()
-print(counter1.value)  # 1
+print(counter1.value)
 
 counter1.count_up()
-print(counter1.value)  # 2
+print(counter1.value)
 
 counter2 = MyCounterV1(value=7)
 print(counter2.value)  # 7

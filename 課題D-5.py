@@ -4,7 +4,7 @@ class MyCounterV2:
         self.step = step
 
     def count_up(self):
-        self.value = self.value + self.step
+        self.value += self.step
 
 
 counter1 = MyCounterV2(value=0, step=1)

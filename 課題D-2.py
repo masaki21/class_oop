@@ -1,3 +1,6 @@
+import math
+
+
 class Rectangle:
     def __init__(self, height, width):
         self.height = height
@@ -8,7 +11,7 @@ class Rectangle:
         return "{:.2f}".format(value)
 
     def diagonal(self):
-        value = (self.height * self.height + self.width * self.width) ** 0.5
+        value = math.sqrt((self.height**2) + (self.width**2))
         return "{:.2f}".format(value)
 
 

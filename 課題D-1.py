@@ -1,13 +1,16 @@
+import math
+
+
 class Circle:
     def __init__(self, radius):
         self.radius = radius
 
     def area(self):
-        value = self.radius * self.radius * 3.14159
+        value = self.radius * self.radius * math.pi
         return "{:.2f}".format(value)
 
     def perimeter(self):
-        value = 2 * self.radius * 3.14159
+        value = 2 * self.radius * math.pi
         return "{:.2f}".format(value)
 
 
